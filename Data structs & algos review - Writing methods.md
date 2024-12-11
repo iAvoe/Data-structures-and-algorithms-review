@@ -52,7 +52,9 @@ public boolean contains(T item) {
 } 
 ```
 
-### Write code under the main method to test your contains method——a LinkedList of String: John, Mary, Jasmine, Nahren, Ishwar, and searching for “Jasmine” (should return true) and “Stephen” (should return false).
+### Write a test under the main method
+
+#### A LinkedList of String: John, Mary, Jasmine, Nahren, Ishwar, and searching for “Jasmine” (should return true) and “Stephen” (should return false).
 
 ```
 public static void main(String[] args) {
