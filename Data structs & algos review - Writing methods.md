@@ -45,7 +45,7 @@ public boolean contains(T item) {
     int elementRemains = numberOfElements;
     while (elementRemains > 0) {
         if (item.equals(current.value)) { return true; }
-        else { current = current.next; }
+        current = current.next;
         elementRemains--;
     }
     return false;
