@@ -2,7 +2,7 @@
 
 ## BIG-O notation 
 
-Predict what the following code will print AND indicate the BIG O notation for each based on loop used ) and method(s) called in the loop.
+Predict what the following code will print AND indicate the BIG O notation for each based on loop used, and method(s) called in the loop.
 ```
 // Initialize
 Stack<Integer> testStack = new Stack<>(); 
