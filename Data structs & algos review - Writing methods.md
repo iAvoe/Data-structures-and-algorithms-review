@@ -142,6 +142,18 @@ matchedNames = names.findAll(item -> item.contains("a"));
 System.out.println(matchedNames.toString());  // Output: [Mary, Jasmine, Nahren, Ishwar]
 ```
 
+### Write a recursive public-private contains method:
+```
+    private boolean recursiveContains(Node<T> node, T item) {
+        if (node == null) { return false; }
+        if (item.equals(node.value)) { return true; }
+        return recursiveContains(node.next, item);
+    }
+    public boolean recursiveContains(T item) {
+        return recursiveContains(first, item);
+    }
+```
+
 ### Create an instance of the Queue class and add 100000 integers from 1 to 100000 to the Queue and then remove all elements until the Que is empty. Do the same thing with an ArrayList of integers. Explain the timing with Big O:
 ```
 long st, ft;
@@ -189,8 +201,7 @@ Total time for removing 100000 items from last: 2 ms
 - Remove from head of arrayList is O(N), since array-shift happens after each removal, then folding happens after current arrayList has half of its previous values: O(N^2)
 - Remove from tail of arrayList is O(1), this time only folding happens: O(N)
 
-### Using the SimpleBinaryTree class, write a public/private size method that will return the number of element nodes in the tree, note that the private method is recursive
-
+### Using the SimpleBinaryTree class, write a recursive public-private size method (return the number of element nodes in the tree)
 ```
 /**
  * Get size of the tree recursively
