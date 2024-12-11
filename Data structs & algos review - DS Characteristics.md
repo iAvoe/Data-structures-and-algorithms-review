@@ -1,4 +1,4 @@
-# Data structures and algorithms review
+# Data structures and algorithms review 1
 
 ## Data structure characteristics
 
@@ -18,27 +18,27 @@
 
 ## Time complexity to add and remove
 
-| Types\Characteristics  | Time Complexity to Add an Item                           | Time Complexity to Remove an Item          |
-|------------------------|----------------------------------------------------------|--------------------------------------------|
-| Arrays                 | O(1): Adding to empty slot; O(N): copying or resizing    | O(N): Find item and shift elements         |
-| ArrayLists             | O(1): Add to the end; O(N): shifting for resizing        | O(N): Find item and shift elements         |
-| Linked Lists           | O(1): Add to the end; O(1): Update links                 | O(1): Update links after removal           |
-| Linked Lists (ordered) | O(1): Find item; O(N): shifting elements after insertion | O(1): Update links after removal           |
-| Stacks                 | O(1): Add to the top                                     | O(1): Removing always takes constant time  |
-| Queues                 | O(1): Add to the end                                     | O(1): Removing always takes constant time  |
-| Binary Trees           | O(log N): Find item; O(1): re-link parent/child          | O(log N): Find item & re-link parent/child |
-| HashSets               | O(1): Hash and add to the bucket                         | O(1): Find and remove from the bucket      |
-| Heaps                  | O(log N): Reconfigure heap after adding                  | O(log N): Reconfigure heap after removing  |
+| Types\Characteristics  | Time Complexity to Add an Item                        | Time Complexity to Remove an Item          |
+|------------------------|-------------------------------------------------------|--------------------------------------------|
+| Arrays                 | O(1): Adding to empty slot; O(N): copying or resizing | O(N): Find item and shift elements         |
+| ArrayLists             | O(1): Add to the end; O(N): shifting for resizing     | O(N): Find item and shift elements         |
+| Node-based LinkedLists | O(1): Add to the end; O(1): Update links              | O(1): Update links after removal           |
+| Stacks                 | O(1): Add to the top                                  | O(1): Removing always takes constant time  |
+| Queues                 | O(1): Add to the end                                  | O(1): Removing always takes constant time  |
+| Binary Trees           | O(log N): Find item; O(1): re-link parent/child       | O(log N): Find item & re-link parent/child |
+| HashSets               | O(1): Hash and add to the bucket                      | O(1): Find and remove from the bucket      |
+| Heaps                  | O(log N): Reconfigure heap after adding               | O(log N): Reconfigure heap after removing  |
 
 ## Advantages and use cases
 
-| Types\Characteristics   | Advantages                                           | Use case                                           |
-|-------------------------|------------------------------------------------------|----------------------------------------------------|
-| Arrays                  | Fast random access, simple implementation            | Anywhere when a fixed size is enough               |
-| ArrayLists              | Dynamic size & fast random access                    | Anywhere when a fixed size isn't enough            |
-| Linked Lists            | Efficient insertion and deletion in O(1)             | Anywhere when resizing is frequent                 |
-| Stacks                  | Efficient push, pop in O(1)                          | Editing softwares' "restorable history of actions" |
-| Queues                  | Efficient enqueue, dequeue in O(1)                   | Task scheduling, printing                          |
-| Binary Trees            | Efficient search, insertion, deletion                | File systems, huffman coding                       |
-| HashSets                | Fast lookup times in O(1)                            | Checking element exists in a large pool of data    |
-| Heaps                   | Efficient insertion and extraction of the min/max    | Sorting and Shortest path algorithms               |
+| Types\Characteristics  | Advantages                                        | Use case                                           |
+|------------------------|---------------------------------------------------|----------------------------------------------------|
+| Arrays                 | Fast random access, simple implementation         | Anywhere when a fixed size is enough               |
+| ArrayLists             | Dynamic size & fast random access                 | Anywhere when a fixed size isn't enough            |
+| Node-based LinkedLists | Efficient insertion and deletion in O(1)          | Anywhere when resizing is frequent                 |
+| Stacks                 | Efficient push, pop in O(1)                       | Editing softwares' "restorable history of actions" |
+| Queues                 | Efficient enqueue, dequeue in O(1)                | Task scheduling, printing                          |
+| Binary Trees           | Efficient search, insertion, deletion             | File systems, huffman coding                       |
+| HashSets               | Fast lookup times in O(1)                         | Checking element exists in a large pool of data    |
+| Heaps                  | Efficient insertion and extraction of the min/max | Sorting and Shortest path algorithms               |
+
