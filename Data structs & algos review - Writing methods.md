@@ -144,14 +144,15 @@ System.out.println(matchedNames.toString());  // Output: [Mary, Jasmine, Nahren,
 
 ### Write a recursive public-private contains method:
 ```
-    private boolean recursiveContains(Node<T> node, T item) {
-        if (node == null) { return false; }
-        if (item.equals(node.value)) { return true; }
-        return recursiveContains(node.next, item);
-    }
-    public boolean recursiveContains(T item) {
-        return recursiveContains(first, item);
-    }
+private boolean recursiveContains(Node<T> node, T item) {
+    if (node == null) { return false; } // Negative base case
+    if (item.equals(node.value)) { return true; } // Positive base case
+    // No returns if nothing found and node has next
+    return recursiveContains(node.next, item); // Path 1/1 and then converge
+}
+public boolean recursiveContains(T item) {
+    return recursiveContains(first, item);
+}
 ```
 
 ### Create an instance of the Queue class and add 100000 integers from 1 to 100000 to the Queue and then remove all elements until the Que is empty. Do the same thing with an ArrayList of integers. Explain the timing with Big O:
